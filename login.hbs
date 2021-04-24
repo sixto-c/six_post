@@ -1,0 +1,35 @@
+ <div class="lg">
+ <div class="container-fluid ">
+  <form method="POST" action="/login">
+       <div class="row">
+           <div class="user">
+            <h1 class="crear">Iniciar Sesión</h1>
+            <br>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAABo0lEQVRYR+2X8TXEQBCHv6uADtABFaADKqCDowJ0QAWogBKogA6cDujA+3nZFzmbzcwkuZfzzL+Z3fn2l9mZ2RkTs9nEePhTQJvAHDgCdiulX4FH4Ab4iKgfVegAeAAElTPBHANPXqgIkNR4MQbaA6Sa2SJAC2DLGEG+O0bfbzcv0Clw6wlQ/Trllcm8QHfAiWnn2uke0EFM5gVSku6bdq6dngFdApOtPdAlcGE6au10Dlxb13gV2gberJtXfrplum0m8wJpU51WFdpiqthnFsfkEwHSWktyu5K5L5DWK590+o0lBT4rFfXdbVGFfgbKNVc3yBAKhYOWFg6h0KBgESB1ezXXNAO1AanLv4/Z7ZWk6mOqRR5TDVIPvLIssigkJTSMeUGW4wtMQ1txPuoCiowbJSE0SaqVSLGslYA8k6HlbyQfQR22KVUC8kyGHiD5tk6SbUCRru6Fyk4BbUBjqpPAsyrlgMbKnZyCv0aTHJB6k675KkxloPEAyAGtIn/SYVUsG1PBWgDphWB+JfT8rxr0Gs/trkrdM55/+T9Ql2aTU+gLCgQ/JQ9/yDcAAAAASUVORK5CYII="/>
+            <input type="text" class="form-control" name="user" required="true" placeholder="nombre de usuario" >
+             <br>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAB6klEQVRYR+2X4TXFQBCF76uAEuiADqgAFaADKqADVIAKUAEqQAWoABVwvnc270w2m2Q3mTjvHOb3JvPtnTuTyUxLFrMl49GfAdqStCNpQ9KapDdJn5JuJV13VcVbIZJfSgKoLYA7DnCNM55AqHEvaTXTl4eSruKzXkBAPIXyZPLMj+3FSnkBcdP9iORO0rmkhwC6K+lU0oo5R/nW7XMeQKjzGpWKRJvByDYfZQXQQtVK5wF0EIwcl+pZ0nYC6kjSmTmMkqg3Dw8gynDSYpwUFJ2IolU82q6cGoikKahvA/Rly+0BFJcgJZaFwkd05GQKMQSZP31RQdF5tiMvJHEpFw/RYcBw65yg+/CQDYxP540GKoVJAdcMzYGhHvKAwcwoi2qLGALkBYP38FUtSoE8YFg/MDHrSCNKgEpgXkJSu4ZQGvahJEipqUthAOlM3NaSOQrlwFQGpaUXLZwzB0o9lAPDOxvtOwSmr+1zYXhPbdoOhekCyoF5l8TqwSxhQRvkmdySpTbA+NnaHjNGlZzByG3tVpfKx58DH0rXSHUZ5fpoycJ8AYINj3K5lKlPoa51Ivnr4ilRSiFuf5NIUtvsPCH6FIo3uup84x9qCqi2SQ1UtRrwRXb3yphPxxRCtL4z51v2D/SrCvQl+wGz+18lyBcs5QAAAABJRU5ErkJggg=="/>
+            <input type="password" class="form-control" name="pass" required="true" placeholder="contraseña">
+             <br>
+             <button type="submit" class="btn btn-primary">iniciar sesion</button>
+             <p class="cuenta">no tenes cuenta? <a href="/crearUsuario" class="a">registrate</a></p><br>
+              <div class="rojo">{{message}}</div>
+        </div>
+        </div>
+    </form>
+ </div>
+ </div>
+ 
+<head>
+    <style>
+        body{
+            background-image:url(/images/a.jpg);
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+
+        }
+    </style>
+</head>

@@ -1,0 +1,22 @@
+<div class="container">
+    <h1 class="empleados">modificar empleado:</h1>
+    <div class="row">
+        <div class="col-8">
+        {{#each trabajador}}
+        <form method="POST" action="/admin/trabajadores/update/{{id}}">
+        <div class="form-group">
+            <label for="nombre">nombre:</label>
+            <input type="text" class="form-control" name="nombre" value="{{nombre}}">
+            <label for="apellido">apellido:</label>
+            <input type="text" class="form-control" name="apellido" value="{{apellido}}">
+            <label for="id_sucursal">id_sucursal:</label>
+            <input type="number" class="form-control" name="id_sucursal" value="{{id_sucursal}}">
+            <label for="sueldo">sueldo:</label>
+            <input type="number" class="form-control" name="sueldo" value="{{sueldo}}">
+            <button type="submit" class="btn btn-primary">enviar</button>
+        </div>
+        </form>
+        {{/each}}
+        </div>
+    </div>
+</div>

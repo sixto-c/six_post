@@ -1,0 +1,66 @@
+<div class="container-fluid">
+{{#if status}}
+<h1 class="empleados">información de los empleados</h1>
+<button class="btn"><a href="/admin/trabajadores/create">crear empleado</a></button>
+<button class="btn"><a href="/admin/trabajadores/disabled">empleados deshabilitados</a></button>
+<button class="btn"><a href="/admin/usuarios">ver usuarios</a></button>
+
+
+<table class="table">
+    <thead>
+            <tr>
+            <th scope="col">nombre</th>
+            <th scope="col">apellido</th>
+            <th scope="col">nombre de sucursal</th>
+            <th scope="col">sueldo</th>
+            <th scope="col">  single</th>
+            <th scope="col">  modificar</th>
+            <th scope="col">borrar</th>
+            </tr>
+    </thead>
+    <tbody>
+        {{#each trabajadores}}
+            <tr>
+                <td>{{nombre}} </td>
+                <td>{{apellido}}</td>
+                <td>{{nombreSucursal}}</td>
+                <td>{{sueldo}}</td>
+                <td><button class="btn"><a href="/admin/trabajadores/single/{{id}}">single</a></button></td>
+                <td><button class="btn"><a href="/admin/trabajadores/update/{{id}}">modificar</a></button></td>
+                <td><button class="btn"><a href="/admin/trabajadores/delete/{{id}}">borrar</a></button></td>
+            </tr>
+        {{/each}}
+    </tbody>
+</table>
+</div>
+{{else}}
+<h2 class="empleados">empleados deshabilitados</h2>
+<button class="btn btn-primary"><a href="/admin/trabajadores">empleados habilitados</a></button>
+<div class="container">
+    <table class= "table">
+        <thead>
+            <tr>
+            <th scope="col">nombre</th>
+            <th scope="col">apellido</th>
+            <th scope="col">nombre de sucursal</th>
+            <th scope="col">sueldo</th>
+            <th scope="col"></th>
+            </tr>
+        </thead>
+    <tbody>
+            {{#each trabajadores}}
+            <tr>
+                <td>{{nombre}} </td>
+                <td>{{apellido}}</td>
+                <td>{{nombreSucursal}}</td>
+                <td>{{sueldo}}</td>
+                <td><a href="/admin/trabajadores/disabled/{{id}}">habilitar</a></td>
+            </tr>
+            {{/each}}
+    </tbody>
+</table>
+</div>
+{{/if}}
+</div>
+
+

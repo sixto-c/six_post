@@ -1,0 +1,33 @@
+<head> <style>
+    body{
+        background-color:#fff;
+        height: 100%;
+        background-size: cover;
+    }
+</style>
+
+</head>
+
+
+<div class="container">
+    <h2 class="empleados">empleado</h2>
+    <table class="table">
+        <thead>
+            <tr>
+            <th scope="col">nombre</th>
+            <th scope="col">apellido</th>
+            <th scope="col">nombre de sucursal</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each trabajador}}
+                <tr>
+                    <th>{{nombre}}</th>
+                    <th>{{apellido}}</th>
+                    <th>{{nombreSucursal}}</th>
+                </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</div>
+

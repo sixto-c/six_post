@@ -1,0 +1,27 @@
+<div class="container-fluid">
+<table class="table">
+    <thead>
+        <tr>
+           <th scope="col">username</th>
+           <th scope="col">password</th> 
+           <th scope="col">admin</th>
+           <th scope="col">mail</th>
+           <th scope="col">convertir en admin</th>
+           <th scope="col">borrar</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each usuarios}}
+        <tr>
+            <td>{{user}}</td>
+            <td>{{pass}}</td> 
+            <td>{{admin}}</td>
+            <td>{{mail}} </td>
+            <td><button class="btn"><a href="/admin/usuarios/convert/{{id}}">convertir</a></button></td>
+            <td><button class="btn"><a href="/admin/usuarios/delete/{{id}}">borrar</a></button></td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
+</div>
+
