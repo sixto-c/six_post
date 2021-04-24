@@ -1,0 +1,206 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  box-sizing: border-box;
+}
+
+/* pagina principal */
+.titulo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size:60px;
+  font-weight: 500;
+  font-family: 'Open Sans', sans-serif;
+  padding:60px ;
+}
+.subtitulo{
+  display: flex;
+  color: #fff;
+  padding-top: 60px;
+  font-size: 15px;
+  font-family: 'Open Sans', sans-serif;
+  width: 40%;
+  text-justify: auto;
+}
+/* boton de pag princ */
+.boton{
+  color: #000;
+  display: inline-block;
+  margin: 10px;
+  color: #0099CC;
+  background: transparent;
+  border: 2px solid #0099CC;
+  border-radius: 6px;
+  padding-right: 2px;
+  text-decoration: none;
+  font-size: 12px;
+}
+.boton:hover {
+  background-color: #008CBA;
+  color: white;
+  text-decoration: none;
+} 
+.lg{
+  margin-right: 700px;
+}
+
+/* crear user */
+
+.fondo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  height: 100%;
+  margin: auto;
+  margin-top: auto;
+ 
+
+}
+/* trabajando los imputs */
+.user{
+  background-color:#C79E1D;
+  border: rgba(0, 0, 0, 0.116) solid .2px;
+  width: 100%;
+  height: 100%;
+  margin-top:70px; 
+  margin-right: 300px;  
+  padding: 40px;
+
+}
+/* crear usuario */
+.usuario{
+  background-color:#cf955f;
+  border: rgba(0, 0, 0, 0.116) solid .2px;
+  width: 100%;
+  height: 100%;
+  margin-top:70px;   
+  padding: 40px;
+}
+
+/* usuario incorrecto */
+.rojo{
+  color:#D70000;
+}
+.btn{
+  display: inline-block;
+  margin: 10px;
+  color: #000;
+  background: transparent;
+  border: 2px solid #0099CC;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 12px;
+
+}
+.bt{
+  color: #000;
+  display: inline-block;
+  margin: 10px;
+  background: transparent;
+  border: 2px solid #0099CC;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.btn:hover {
+  background-color: #008CBA;
+  color: white;
+  text-decoration: none;
+} 
+/* fondo de crearusuario */
+.bt a{
+  text-decoration: none;
+}
+.btn a{
+  text-decoration: none;
+}
+
+.a{
+  font-size: 14px;
+  font-family:  'Open Sans',  sans-serif;
+  text-decoration: none;
+  color: #fff;
+}
+/* trabajando con las img */
+/* div que contiene la imagen */
+.img{
+  display: flex;
+  justify-content: space-between;
+}
+/* parrafo dentro del div que contiene la img */
+.imagen{
+  width: 22%;
+}
+
+.i{
+  display: flex;
+  align-items: center;
+  margin-right: 5px;
+ 
+}
+
+.e{
+  padding-top: 30px;
+}
+
+/* titulo de reclumiento */
+.r{
+  color: #000;
+  font-size: 50px;
+  font-weight: 800;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+/* agencia */
+.A{
+  color: #000;
+  font-size: 40px;
+  font-weight:400;
+  font-family: 'Orelega One', cursive;
+}
+.A a{
+  text-decoration: #000;
+}
+/* footer */
+.footer{
+  display: flex;
+  justify-content: space-between;
+  height: 200px;
+  width: 100%;
+  background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);;
+}
+.celu{
+  display: flex;
+ align-items: center;
+  width: 50px;
+  width: 50px;
+}
+.center{
+  display: flex;
+align-items: center;
+flex-wrap: wrap wrap;
+font-family: 'Open Sans', sans-serif;
+}
+.bx{
+  display: flex;
+  font-family: 'Open Sans', sans-serif;
+  padding: 50px;
+  font-size: 40px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #fff;
+}
+.line{
+  width: 90%;
+  max-width: 1200px;
+  height: 2px;
+  background:#fff;
+  margin-bottom:60px;
+}
